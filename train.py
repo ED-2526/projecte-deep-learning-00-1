@@ -1,7 +1,7 @@
 from tqdm.auto import tqdm
 import wandb
 #some changes to test the commit and push functionality of git
-
+#somme mmore changes to test the commit and push functionality of git
 def train(model, loader, criterion, optimizer, config,device="cuda"):
     # Tell wandb to watch what the model gets up to: gradients, weights, and more!
     wandb.watch(model, criterion, log="all", log_freq=10)
